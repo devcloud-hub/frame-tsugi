@@ -20,7 +20,7 @@ jobs:
         run: |
             cd /home/githubrunner/framework-tsugi
             git pull
-            docker build -t currikiprod-tsugi -f Dockerfile.8.1 .
+            docker build -t currikiprod-tsugi .
             docker tag currikiprod-tsugi quay.io/curriki/tsugi:frame-new
             docker push quay.io/curriki/tsugi:frame-new
 
